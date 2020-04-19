@@ -450,7 +450,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 245
+#define HEATER_0_MAXTEMP 300
 #define HEATER_1_MAXTEMP 245
 #define HEATER_2_MAXTEMP 245
 #define HEATER_3_MAXTEMP 245
@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // FolgerTech i3-2020
-  #define DEFAULT_Kp 16.43
-  #define DEFAULT_Ki 0.80
-  #define DEFAULT_Kd 84.12
+  #define DEFAULT_Kp 26.79
+  #define DEFAULT_Ki 1.65
+  #define DEFAULT_Kd 108.62
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -544,9 +544,9 @@
   //#define DEFAULT_bedKi 18.0
   //#define DEFAULT_bedKd 950.0
 
-  #define DEFAULT_bedKp 89.30
-  #define DEFAULT_bedKi 17.30
-  #define DEFAULT_bedKd 307.25
+  #define DEFAULT_bedKp 121.74
+  #define DEFAULT_bedKi 22.86
+  #define DEFAULT_bedKd 432.19
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -1105,11 +1105,11 @@
 #define Y_BED_SIZE (Y_MAX_POS-Y_MIN_POS)
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 6
-#define Y_MIN_POS 3
+#define X_MIN_POS 0
+#define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 207
-#define Y_MAX_POS 182
+#define X_MAX_POS 190
+#define Y_MAX_POS 200
 #define Z_MAX_POS 175
 
 /**
